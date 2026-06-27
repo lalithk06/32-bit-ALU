@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -126,9 +127,9 @@ module arithmetic_unit(
 //-------------------------  
      always @(*) begin
         if(!arith_enable) begin
-            cla_A = 32'b0; 
-            cla_B = 32'b0; 
-            cla_Cin = 1'b0;
+            Result = 32'b0;
+            Cout   = 1'b0;
+            V      = 1'b0;
         end
         
         else begin

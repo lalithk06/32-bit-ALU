@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+D:/GitHUB/32-bit ALU/FPGA_Vivado/ALU32.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+D:/GitHUB/32-bit ALU/RTL/cla4.v,1782550893,verilog,,D:/GitHUB/32-bit ALU/TB/tb_cla4.v,,cla4,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/GitHUB/32-bit ALU/TB/tb_cla4.v,1782574389,verilog,,,,tb_cla4,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,

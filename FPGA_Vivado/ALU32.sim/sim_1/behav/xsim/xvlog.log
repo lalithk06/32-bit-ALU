@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHUB/32-bit ALU/RTL/cla4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHUB/32-bit ALU/TB/tb_cla4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cla4

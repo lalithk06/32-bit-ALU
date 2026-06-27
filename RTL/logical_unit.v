@@ -24,6 +24,7 @@ module logical_unit(
         input [31:0] A,
         input [31:0] B,
         input [2:0] opcode,
+        input logic_enable,
         
         output reg [31:0] Result
     );
@@ -37,47 +38,53 @@ module logical_unit(
     localparam XNOR = 3'b110;
     
     always @(*) begin
-        case(opcode)
-            AND:
-            begin 
-                Result = A & B;
-            end 
-            
-            OR:
-            begin 
-                Result = A | B;
-            end 
-            
-            NOT:
-            begin 
-                Result = ~A;
-            end 
-            
-            XOR:
-            begin 
-                Result = A ^ B;
-            end 
-            
-            NAND:
-            begin 
-                Result = ~(A & B);
-            end 
-            
-            NOR:
-            begin 
-                Result = ~(A | B);
-            end 
-            
-            XNOR:
-            begin 
-                Result = ~(A ^ B);
-            end 
-            
-            default:
-            begin 
-                Result = 32'b0;
-            end 
-            
-        endcase
+        if(!logic_enable) begin
+            Result = 32'b0;
+        end
+        
+        else begin
+            case(opcode)
+                AND:
+                begin 
+                    Result = A & B;
+                end 
+                
+                OR:
+                begin 
+                    Result = A | B;
+                end 
+                
+                NOT:
+                begin 
+                    Result = ~A;
+                end 
+                
+                XOR:
+                begin 
+                    Result = A ^ B;
+                end 
+                
+                NAND:
+                begin 
+                    Result = ~(A & B);
+                end 
+                
+                NOR:
+                begin 
+                    Result = ~(A | B);
+                end 
+                
+                XNOR:
+                begin 
+                    Result = ~(A ^ B);
+                end 
+                
+                default:
+                begin 
+                    Result = 32'b0;
+                end 
+                
+            endcase
+        end
     end
 endmodule

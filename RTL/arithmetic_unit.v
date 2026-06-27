@@ -24,6 +24,7 @@ module arithmetic_unit(
         input [31:0] A,
         input [31:0] B,
         input [2:0] opcode,
+        input arith_enable,
         
         output reg [31:0] Result,
         output reg        Cout
@@ -46,57 +47,65 @@ module arithmetic_unit(
 // Operand Selection Logic
 //--------------------------
     always @(*) begin
-        case (opcode)
+        if(!arith_enable) begin
+            cla_A = 32'b0; 
+            cla_B = 32'b0; 
+            cla_Cin = 1'b0;
+        end
         
-            ADD:
-            begin
-                cla_A = A; 
-                cla_B = B; 
-                cla_Cin = 1'b0;
-            end
+        else begin
+            case (opcode)
+            
+                ADD:
+                begin
+                    cla_A = A; 
+                    cla_B = B; 
+                    cla_Cin = 1'b0;
+                end
+                    
+                SUB:
+                begin
+                    cla_A = A; 
+                    cla_B = ~B; 
+                    cla_Cin = 1'b1;
+                end
                 
-            SUB:
-            begin
-                cla_A = A; 
-                cla_B = ~B; 
-                cla_Cin = 1'b1;
-            end
-            
-            INC:
-            begin   
-                cla_A = A; 
-                cla_B = 32'b0; 
-                cla_Cin = 1'b1;
-            end
-            
-            DEC:
-            begin
-                cla_A = A; 
-                cla_B = 32'hFFFFFFFF;
-                cla_Cin = 1'b0;
-            end
-            
-            PASS_A:
-            begin
-                cla_A = 32'b0;
-                cla_B = 32'b0;
-                cla_Cin = 1'b0;
-            end
-            
-            PASS_B:
-            begin
-                cla_A = 32'b0;
-                cla_B = 32'b0;
-                cla_Cin = 1'b0;
-            end
-            
-            default:
-            begin
-                cla_A    = 32'b0;
-                cla_B    = 32'b0;
-                cla_Cin  = 1'b0;
-            end
-        endcase
+                INC:
+                begin   
+                    cla_A = A; 
+                    cla_B = 32'b0; 
+                    cla_Cin = 1'b1;
+                end
+                
+                DEC:
+                begin
+                    cla_A = A; 
+                    cla_B = 32'hFFFFFFFF;
+                    cla_Cin = 1'b0;
+                end
+                
+                PASS_A:
+                begin
+                    cla_A = 32'b0;
+                    cla_B = 32'b0;
+                    cla_Cin = 1'b0;
+                end
+                
+                PASS_B:
+                begin
+                    cla_A = 32'b0;
+                    cla_B = 32'b0;
+                    cla_Cin = 1'b0;
+                end
+                
+                default:
+                begin
+                    cla_A    = 32'b0;
+                    cla_B    = 32'b0;
+                    cla_Cin  = 1'b0;
+                end
+            endcase
+        end
     end
 
 
@@ -116,34 +125,42 @@ module arithmetic_unit(
 // Output Selection Logic
 //-------------------------  
      always @(*) begin
-        case (opcode)
+        if(!enable) begin
+            cla_A = 32'b0; 
+            cla_B = 32'b0; 
+            cla_Cin = 1'b0;
+        end
         
-            ADD,
-            SUB,
-            INC,
-            DEC:
-            begin
-                Result = cla_Result;
-                Cout = cla_Cout;
-            end
+        else begin
+            case (opcode)
             
-            PASS_A:
-            begin
-                Result = A;
-                Cout = 1'b0;
-            end
-            
-            PASS_B:
-            begin
-                Result = B;
-                Cout = 1'b0;
-            end
-            
-            default:
-            begin
-               Result   = 32'b0;
-                Cout     = 1'b0;
-            end
-        endcase
+                ADD,
+                SUB,
+                INC,
+                DEC:
+                begin
+                    Result = cla_Result;
+                    Cout = cla_Cout;
+                end
+                
+                PASS_A:
+                begin
+                    Result = A;
+                    Cout = 1'b0;
+                end
+                
+                PASS_B:
+                begin
+                    Result = B;
+                    Cout = 1'b0;
+                end
+                
+                default:
+                begin
+                   Result   = 32'b0;
+                    Cout     = 1'b0;
+                end
+            endcase
+        end
     end
 endmodule

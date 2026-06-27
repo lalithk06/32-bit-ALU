@@ -25,8 +25,9 @@ module alu32(
         input [31:0] B,
         input [4:0]  alu_opcode,
         
-        output reg [31:0] Result
-    );
+        output reg [31:0] Result,
+        output Z, N, C, P, V
+     );
     
     reg [2:0] op_sel;
     
@@ -34,6 +35,7 @@ module alu32(
     wire [31:0] logic_result;
     wire [31:0] shift_result;
     wire arith_Cout;
+    wire arith_Overflow;
     
     reg arith_enable;
     reg logic_enable;
@@ -49,7 +51,8 @@ module alu32(
             .opcode(op_sel), 
             .arith_enable(arith_enable), 
             .Result(arith_result), 
-            .Cout(arith_Cout)
+            .Cout(arith_Cout),
+            .V(arith_Overflow)
             );
             
     logical_unit    LU(
@@ -123,4 +126,11 @@ module alu32(
             end
         endcase
     end
+    
+    assign Z = (Result == 32'b0)? 1'b1 : 1'b0;
+    assign C = (alu_opcode[4:3] == ARITHMETIC) ? arith_Cout : 1'b0;
+    assign N = Result[31];
+    assign P = ~^Result;
+    assign V = (alu_opcode[4:3] == ARITHMETIC) ? arith_Overflow : 1'b0;
+        
 endmodule

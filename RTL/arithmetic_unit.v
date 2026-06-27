@@ -27,7 +27,7 @@ module arithmetic_unit(
         input arith_enable,
         
         output reg [31:0] Result,
-        output reg        Cout
+        output reg        Cout, V
     );
     
     reg [31:0] cla_A, cla_B;
@@ -125,7 +125,7 @@ module arithmetic_unit(
 // Output Selection Logic
 //-------------------------  
      always @(*) begin
-        if(!enable) begin
+        if(!arith_enable) begin
             cla_A = 32'b0; 
             cla_B = 32'b0; 
             cla_Cin = 1'b0;
@@ -141,18 +141,21 @@ module arithmetic_unit(
                 begin
                     Result = cla_Result;
                     Cout = cla_Cout;
+                    V = (cla_A[31] == cla_B[31]) && (cla_Result[31] != cla_A[31]);
                 end
                 
                 PASS_A:
                 begin
                     Result = A;
                     Cout = 1'b0;
+                    V = 1'b0;
                 end
                 
                 PASS_B:
                 begin
                     Result = B;
                     Cout = 1'b0;
+                    V = 1'b0;
                 end
                 
                 default:

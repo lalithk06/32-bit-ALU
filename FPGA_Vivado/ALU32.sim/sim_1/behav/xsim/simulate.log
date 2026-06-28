@@ -58,3 +58,4 @@ PASS [54] Opcode=10000 Result=aaaaaaa0
 ALL 54 ALU TESTS PASSED
 ======================================
 $finish called at time : 540 ns : File "D:/GitHUB/32-bit ALU/TB/tb_alu32.v" Line 352
+The simulator has terminated in an unexpected manner with exit code 1073807364.  Please review the simulation log (xsim.log) for details.

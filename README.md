@@ -161,16 +161,16 @@ All simulation was run in Vivado (XSim); waveform configurations and screenshots
 
 ## Toolchain
 
-| Stage | Tool Used (this project) | Commercial Equivalent |
+| Stage | Tool Used | Commercial Equivalent |
 |---|---|---|
-| RTL Coding | Vivado source editor / VS Code | Cadence Xcelium, Synopsys Verdi |
+| RTL Coding | Vivado source editor | Cadence Xcelium, Synopsys Verdi |
 | Functional Verification | Vivado Simulator (XSim) | QuestaSim, Synopsys VCS |
-| Logic Synthesis | Yosys *(planned)* | Cadence Genus, Synopsys Design Compiler |
-| Static Timing Analysis | OpenSTA *(planned, via OpenLane)* | Synopsys PrimeTime |
-| Floorplan / Placement / CTS / Routing | OpenROAD via OpenLane2 *(planned)* | Cadence Innovus |
-| Physical Verification (DRC/LVS) | Magic + Netgen *(planned)* | Siemens Calibre |
-| GDSII Generation | Magic *(planned)* | Cadence Innovus |
-| PDK | SkyWater sky130 (open) *(planned)* | TSMC / Samsung / GF (proprietary) |
+| Logic Synthesis | Yosys | Cadence Genus, Synopsys Design Compiler |
+| Static Timing Analysis | OpenSTA via OpenLane | Synopsys PrimeTime |
+| Floorplan / Placement / CTS / Routing | OpenROAD via OpenLane2 | Cadence Innovus |
+| Physical Verification (DRC/LVS) | Magic + Netgen | Siemens Calibre |
+| GDSII Generation | Magic | Cadence Innovus |
+| PDK | SkyWater sky130 (open) | TSMC / Samsung / GF (proprietary) |
 
 ---
 
@@ -178,9 +178,9 @@ All simulation was run in Vivado (XSim); waveform configurations and screenshots
 
 - [x] Specification
 - [x] Architecture
-- [x] RTL Coding — `half_adder` → `full_adder` → `cla4/8/16/32` → `arithmetic_unit` / `logical_unit` / `shift_unit` → `alu32`
+- [x] RTL Coding — `cla4/8/32` → `arithmetic_unit` / `logical_unit` / `shift_unit` → `alu32`
 - [x] Functional Verification — `cla4` (exhaustive, 512/512), `arithmetic_unit` (directed edge cases), `alu32` top-level (54/54 directed tests passing)
-- [ ] RTL Lint / Schematic Check — **next**
+- [ ] RTL Lint / Schematic Check
 - [ ] Logic Synthesis (Yosys)
 - [ ] Physical Design (OpenLane2 + sky130 PDK)
 - [ ] GDSII Generation

@@ -1,38 +1,30 @@
 Time resolution is 1 ps
-PASS [Test 1] op=000 A=ffffffff B=ffffffff -> Result=ffffffff
-PASS [Test 2] op=000 A=ffffffff B=00000000 -> Result=00000000
-PASS [Test 3] op=000 A=aaaaaaaa B=55555555 -> Result=00000000
-PASS [Test 4] op=000 A=12345678 B=87654321 -> Result=02244220
-PASS [Test 5] op=001 A=00000000 B=00000000 -> Result=00000000
-PASS [Test 6] op=001 A=ffffffff B=00000000 -> Result=ffffffff
-PASS [Test 7] op=001 A=aaaaaaaa B=55555555 -> Result=ffffffff
-PASS [Test 8] op=001 A=12345678 B=87654321 -> Result=97755779
-PASS [Test 9] op=010 A=00000000 B=00000000 -> Result=ffffffff
-PASS [Test 10] op=010 A=ffffffff B=00000000 -> Result=00000000
-PASS [Test 11] op=010 A=aaaaaaaa B=00000000 -> Result=55555555
-PASS [Test 12] op=010 A=12345678 B=00000000 -> Result=edcba987
-PASS [Test 13] op=011 A=ffffffff B=ffffffff -> Result=00000000
-PASS [Test 14] op=011 A=aaaaaaaa B=55555555 -> Result=ffffffff
-PASS [Test 15] op=011 A=12345678 B=87654321 -> Result=95511559
-PASS [Test 16] op=100 A=ffffffff B=ffffffff -> Result=00000000
-PASS [Test 17] op=100 A=ffffffff B=00000000 -> Result=ffffffff
-PASS [Test 18] op=100 A=aaaaaaaa B=55555555 -> Result=ffffffff
-PASS [Test 19] op=101 A=ffffffff B=ffffffff -> Result=00000000
-PASS [Test 20] op=101 A=00000000 B=00000000 -> Result=ffffffff
-PASS [Test 21] op=101 A=aaaaaaaa B=55555555 -> Result=00000000
-PASS [Test 22] op=110 A=ffffffff B=ffffffff -> Result=ffffffff
-PASS [Test 23] op=110 A=aaaaaaaa B=55555555 -> Result=00000000
-PASS [Test 24] op=110 A=12345678 B=87654321 -> Result=6aaeeaa6
-PASS [Test 25] op=000 A=ffffffff B=ffffffff -> Result=00000000
-PASS [Test 26] op=001 A=aaaaaaaa B=55555555 -> Result=00000000
-PASS [Test 27] op=011 A=12345678 B=87654321 -> Result=00000000
-PASS [Test 28] op=100 A=ffffffff B=00000000 -> Result=00000000
-PASS [Test 29] op=101 A=ffffffff B=00000000 -> Result=00000000
-PASS [Test 30] op=110 A=ffffffff B=00000000 -> Result=00000000
-PASS [Test 31] op=010 A=aaaaaaaa B=00000000 -> Result=00000000
-PASS [Test 32] op=111 A=12345678 B=87654321 -> Result=00000000
+PASS [Test 1] op=000 A=00000001 sh=0 -> Result=00000001
+PASS [Test 2] op=000 A=00000001 sh=1 -> Result=00000002
+PASS [Test 3] op=000 A=00000001 sh=31 -> Result=80000000
+PASS [Test 4] op=000 A=ffffffff sh=1 -> Result=fffffffe
+PASS [Test 5] op=000 A=aaaaaaaa sh=4 -> Result=aaaaaaa0
+PASS [Test 6] op=000 A=12345678 sh=8 -> Result=34567800
+PASS [Test 7] op=001 A=80000000 sh=1 -> Result=40000000
+PASS [Test 8] op=001 A=ffffffff sh=1 -> Result=7fffffff
+PASS [Test 9] op=001 A=80000000 sh=31 -> Result=00000001
+PASS [Test 10] op=001 A=12345678 sh=4 -> Result=01234567
+PASS [Test 11] op=001 A=00000001 sh=1 -> Result=00000000
+PASS [Test 12] op=010 A=80000000 sh=1 -> Result=c0000000
+PASS [Test 13] op=010 A=ffffffff sh=1 -> Result=ffffffff
+PASS [Test 14] op=010 A=7fffffff sh=1 -> Result=3fffffff
+PASS [Test 15] op=010 A=80000000 sh=31 -> Result=ffffffff
+PASS [Test 16] op=010 A=12345678 sh=4 -> Result=01234567
+PASS [Test 17] op=000 A=12345678 sh=4 -> Result=00000000
+PASS [Test 18] op=001 A=12345678 sh=4 -> Result=00000000
+PASS [Test 19] op=010 A=12345678 sh=4 -> Result=00000000
+PASS [Test 20] op=011 A=12345678 sh=4 -> Result=00000000
+PASS [Test 21] op=100 A=12345678 sh=4 -> Result=00000000
+PASS [Test 22] op=101 A=12345678 sh=4 -> Result=00000000
+PASS [Test 23] op=110 A=12345678 sh=4 -> Result=00000000
+PASS [Test 24] op=111 A=12345678 sh=4 -> Result=00000000
 
 ======================================
-ALL 32 TESTS PASSED
+ALL 24 TESTS PASSED
 ======================================
-$finish called at time : 32 ns : File "D:/GitHUB/32-bit ALU/TB/tb_logical_unit.v" Line 161
+$finish called at time : 24 ns : File "D:/GitHUB/32-bit ALU/TB/tb_shift_unit.v" Line 131

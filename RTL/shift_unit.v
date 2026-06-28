@@ -32,7 +32,7 @@ module shift_unit(
                 
                 SHIFT_RA:
                 begin
-                    Result = A >>> sh_amt;
+                    Result = $signed(A) >>> sh_amt;
                 end
                 
                 default: 

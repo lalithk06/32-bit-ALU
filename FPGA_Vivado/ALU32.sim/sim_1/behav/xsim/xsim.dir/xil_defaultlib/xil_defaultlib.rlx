@@ -3,12 +3,14 @@
 Nov 14 2025
 19:37:27
 D:/GitHUB/32-bit ALU/FPGA_Vivado/ALU32.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+D:/GitHUB/32-bit ALU/RTL/alu32.v,1782575586,verilog,,D:/GitHUB/32-bit ALU/RTL/arithmetic_unit.v,,alu32,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
 D:/GitHUB/32-bit ALU/RTL/arithmetic_unit.v,1782577001,verilog,,D:/GitHUB/32-bit ALU/RTL/cla32.v,,arithmetic_unit,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
 D:/GitHUB/32-bit ALU/RTL/cla32.v,1782553849,verilog,,D:/GitHUB/32-bit ALU/RTL/cla4.v,,cla32,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
 D:/GitHUB/32-bit ALU/RTL/cla4.v,1782550893,verilog,,D:/GitHUB/32-bit ALU/RTL/cla8.v,,cla4,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
-D:/GitHUB/32-bit ALU/RTL/cla8.v,1782575526,verilog,,D:/GitHUB/32-bit ALU/TB/tb_arithmetic_unit.v,,cla8,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
-D:/GitHUB/32-bit ALU/RTL/logical_unit.v,1782575599,verilog,,D:/GitHUB/32-bit ALU/TB/tb_logical_unit.v,,logical_unit,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
-D:/GitHUB/32-bit ALU/RTL/shift_unit.v,1782610873,verilog,,D:/GitHUB/32-bit ALU/TB/tb_shift_unit.v,,shift_unit,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/GitHUB/32-bit ALU/RTL/cla8.v,1782575526,verilog,,D:/GitHUB/32-bit ALU/RTL/logical_unit.v,,cla8,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/GitHUB/32-bit ALU/RTL/logical_unit.v,1782575599,verilog,,D:/GitHUB/32-bit ALU/RTL/shift_unit.v,,logical_unit,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/GitHUB/32-bit ALU/RTL/shift_unit.v,1782610873,verilog,,D:/GitHUB/32-bit ALU/TB/tb_alu32.v,,shift_unit,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
+D:/GitHUB/32-bit ALU/TB/tb_alu32.v,1782612246,verilog,,,,tb_alu32,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
 D:/GitHUB/32-bit ALU/TB/tb_arithmetic_unit.v,1782579667,verilog,,,,tb_arithmetic_unit,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
 D:/GitHUB/32-bit ALU/TB/tb_cla32.v,1782576450,verilog,,,,tb_cla32,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,
 D:/GitHUB/32-bit ALU/TB/tb_cla4.v,1782574389,verilog,,,,tb_cla4,,,../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef,,,,,

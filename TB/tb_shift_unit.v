@@ -1,11 +1,15 @@
 `timescale 1ns / 1ps
+
 //////////////////////////////////////////////////////////////////////////////////
-// Module Name: tb_arithmetic_unit
-// Description: Directed edge-case testbench for arithmetic_unit.
-//              Covers: signed overflow at all 4 boundary cases (ADD/SUB/INC/DEC),
-//              carry-out vs overflow distinction, sign-mismatch (no false overflow),
-//              normal operation, PASS_A/PASS_B, and disabled (arith_enable=0).
+// Module Name: tb_shift_unit
+// Description: Directed edge-case testbench for shift_unit.
+//              Covers: logical left shift (SLL), logical right shift
+//              (SRL), arithmetic right shift (SRA), shift amounts
+//              including 0, 1, 4, 8 and 31, sign-extension behavior
+//              for arithmetic shifts, disabled mode
+//              (shift_enable = 0), and invalid opcode handling.
 //////////////////////////////////////////////////////////////////////////////////
+
 module tb_shift_unit;
 
     reg  [31:0] A;

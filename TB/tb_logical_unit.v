@@ -1,11 +1,14 @@
 `timescale 1ns / 1ps
+
 //////////////////////////////////////////////////////////////////////////////////
-// Module Name: tb_arithmetic_unit
-// Description: Directed edge-case testbench for arithmetic_unit.
-//              Covers: signed overflow at all 4 boundary cases (ADD/SUB/INC/DEC),
-//              carry-out vs overflow distinction, sign-mismatch (no false overflow),
-//              normal operation, PASS_A/PASS_B, and disabled (arith_enable=0).
+// Module Name: tb_logical_unit
+// Description: Directed edge-case testbench for logical_unit.
+//              Covers: all logical operations (AND, OR, NOT, XOR,
+//              NAND, NOR, XNOR), alternating and random bit patterns,
+//              all-zeros/all-ones inputs, disabled mode
+//              (logic_enable = 0), and invalid opcode handling.
 //////////////////////////////////////////////////////////////////////////////////
+
 module tb_logical_unit;
 
     reg  [31:0] A, B;

@@ -126,6 +126,11 @@ module arithmetic_unit(
 // Output Selection Logic
 //-------------------------  
      always @(*) begin
+     
+        Result = 32'd0;
+        Cout   = 1'b0;
+        V = 1'b0;
+    
         if(!arith_enable) begin
             Result = 32'b0;
             Cout   = 1'b0;

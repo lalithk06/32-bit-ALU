@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/runs/RUN_2026-06-28_13-46-21/tmp/24a2c936f1b14432a623a3526f41b40e.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/runs/RUN_2026-06-28_13-46-21/tmp/24a2c936f1b14432a623a3526f41b40e.bb.v"

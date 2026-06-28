@@ -1,0 +1,41 @@
+[WARNING ORD-0039] .openroad ignored with -python
+Top-level design name: alu32
+Block boundaries: 0 0 160610 171330
+Horizontal Tracks Origin: 340, Count: 252, Step: 680
+Vertical Tracks Origin: 230, Count: 349, Step: 460
+Placement details for the N side
+Virtual pin count:  0
+Actual pin count:  32
+Total pin count:  32
+Tracks count:  349
+Tracks per pin:  10
+Used tracks count:  311
+Unused track count:  38
+Starting track index:  19
+Placement details for the E side
+Virtual pin count:  0
+Actual pin count:  32
+Total pin count:  32
+Tracks count:  126
+Tracks per pin:  3
+Used tracks count:  94
+Unused track count:  32
+Starting track index:  16
+Placement details for the W side
+Virtual pin count:  0
+Actual pin count:  10
+Total pin count:  10
+Tracks count:  126
+Tracks per pin:  12
+Used tracks count:  109
+Unused track count:  17
+Starting track index:  8
+Placement details for the S side
+Virtual pin count:  0
+Actual pin count:  32
+Total pin count:  32
+Tracks count:  349
+Tracks per pin:  10
+Used tracks count:  311
+Unused track count:  38
+Starting track index:  19

@@ -1,0 +1,74 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/lalith_kishore/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/lalith_kishore/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/lalith_kishore/.volare/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/runs/RUN_2026-06-28_15-44-43/27-openroad-globalplacement/alu32.odb'…
+Reading design constraints file at '/nix/store/ss2cw3sxbrwwx9jl0rrppbw4kgcmgi2n-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/base.sdc'…
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Using clock __VIRTUAL_CLK__…
+[INFO] Setting output delay to: 2.0
+[INFO] Setting input delay to: 2.0
+[WARNING STA-0366] port '__VIRTUAL_CLK__' not found.
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5%
+[WARNING STA-0450] virtual clock __VIRTUAL_CLK__ can not be propagated.
+[INFO] Setting RC values…
+[INFO RSZ-0027] Inserted 69 input buffers.
+[INFO RSZ-0028] Inserted 37 output buffers.
+[INFO RSZ-0058] Using max wire length 6335um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      1228
+      100 |      87 |       0 |             0 |      1128
+      200 |     177 |       0 |             0 |      1028
+      300 |     272 |       0 |             0 |       928
+      400 |     360 |       0 |             0 |       828
+      500 |     452 |       0 |             1 |       728
+      600 |     544 |       0 |             2 |       628
+      700 |     636 |       5 |            10 |       528
+      800 |     716 |       5 |            10 |       428
+      900 |     777 |      18 |            23 |       328
+     1000 |     893 |      64 |            38 |       228
+     1100 |     967 |      82 |            51 |       128
+     1200 |    1056 |     146 |            84 |        28
+    final |    1056 |     146 |            84 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 19 slew violations.
+[INFO RSZ-0035] Found 66 fanout violations.
+[INFO RSZ-0038] Inserted 146 buffers in 84 nets.
+[INFO RSZ-0039] Resized 1056 instances.
+Placement Analysis
+---------------------------------
+total displacement       2723.5 u
+average displacement        1.6 u
+max displacement           10.8 u
+original HPWL           36793.3 u
+legalized HPWL          38719.7 u
+delta HPWL                    5 %
+
+[INFO DPL-0020] Mirrored 521 instances
+[INFO DPL-0021] HPWL before           38719.7 u
+[INFO DPL-0022] HPWL after            37924.9 u
+[INFO DPL-0023] HPWL delta               -2.1 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               108     405.39
+  Tap cell                                308     385.37
+  Buffer                                    1       3.75
+  Timing Repair Buffer                    252    1391.33
+  Inverter                                 54     202.69
+  Multi-Input combinational cell          998    8319.23
+  Total                                  1721   10707.77
+Writing OpenROAD database to '/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/runs/RUN_2026-06-28_15-44-43/31-openroad-repairdesignpostgpl/alu32.odb'…
+Writing netlist to '/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/runs/RUN_2026-06-28_15-44-43/31-openroad-repairdesignpostgpl/alu32.nl.v'…
+Writing powered netlist to '/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/runs/RUN_2026-06-28_15-44-43/31-openroad-repairdesignpostgpl/alu32.pnl.v'…
+Writing layout to '/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/runs/RUN_2026-06-28_15-44-43/31-openroad-repairdesignpostgpl/alu32.def'…
+Writing timing constraints to '/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/runs/RUN_2026-06-28_15-44-43/31-openroad-repairdesignpostgpl/alu32.sdc'…

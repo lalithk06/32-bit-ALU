@@ -1,0 +1,15 @@
+
+21. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\alu32.\Result' from process `\alu32.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/alu32.v:86$2'.
+No latch inferred for signal `\alu32.\op_sel' from process `\alu32.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/alu32.v:55$1'.
+No latch inferred for signal `\alu32.\arith_enable' from process `\alu32.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/alu32.v:55$1'.
+No latch inferred for signal `\alu32.\logic_enable' from process `\alu32.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/alu32.v:55$1'.
+No latch inferred for signal `\alu32.\shift_enable' from process `\alu32.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/alu32.v:55$1'.
+No latch inferred for signal `\arithmetic_unit.\V' from process `\arithmetic_unit.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/arithmetic_unit.v:128$30'.
+No latch inferred for signal `\arithmetic_unit.\Result' from process `\arithmetic_unit.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/arithmetic_unit.v:128$30'.
+No latch inferred for signal `\arithmetic_unit.\Cout' from process `\arithmetic_unit.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/arithmetic_unit.v:128$30'.
+No latch inferred for signal `\arithmetic_unit.\cla_A' from process `\arithmetic_unit.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/arithmetic_unit.v:50$27'.
+No latch inferred for signal `\arithmetic_unit.\cla_B' from process `\arithmetic_unit.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/arithmetic_unit.v:50$27'.
+No latch inferred for signal `\arithmetic_unit.\cla_Cin' from process `\arithmetic_unit.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/arithmetic_unit.v:50$27'.
+No latch inferred for signal `\logical_unit.\Result' from process `\logical_unit.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/logical_unit.v:20$15'.
+No latch inferred for signal `\shift_unit.\Result' from process `\shift_unit.$proc$/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/src/shift_unit.v:16$10'.

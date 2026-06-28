@@ -168,6 +168,7 @@ module arithmetic_unit(
                 begin
                    Result   = 32'b0;
                     Cout     = 1'b0;
+                    V      = 1'b0;
                 end
             endcase
         end

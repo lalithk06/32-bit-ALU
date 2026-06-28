@@ -1,4 +1,0 @@
-%Error: /mnt/d/GitHUB/32-bit ALU/ASIC_OpenLane/runs/RUN_2026-06-28_13-42-36/tmp/3907dc0a7ddd402893fdd21c5f381a00.bb.v:513:40: Can't resolve module reference: 'sky130_fd_sc_hd__udp_pwrgood_pp$PG'
-  513 |     sky130_fd_sc_hd__udp_pwrgood_pp$PG pwrgood_pp0 (pwrgood_pp0_out_X, or0_out_X, VPWR, VGND);
-      |                                        ^~~~~~~~~~~
-%Error: Exiting due to 1 error(s)

@@ -1,0 +1,31 @@
+{
+    "nl": "/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/runs/RUN_2026-06-28_15-44-43/06-yosys-synthesis/alu32.nl.v",
+    "pnl": null,
+    "pnl-sdf-friendly": null,
+    "pnl-npc": null,
+    "def": null,
+    "lef": null,
+    "openroad-lef": null,
+    "odb": null,
+    "sdc": null,
+    "sdf": null,
+    "spef": null,
+    "lib": null,
+    "spice": null,
+    "mag": null,
+    "gds": null,
+    "mag_gds": null,
+    "klayout_gds": null,
+    "json_h": "/mnt/d/GitHUB/32-bit_ALU/ASIC_OpenLane/runs/RUN_2026-06-28_15-44-43/05-yosys-jsonheader/alu32.h.json",
+    "vh": null,
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 441,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 1053,
+        "design__instance__area": 10067.1552,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+    }
+}

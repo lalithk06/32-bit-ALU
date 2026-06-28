@@ -1,0 +1,12 @@
+
+===========================================================================
+Violator List
+============================================================================
+[setup in-out] alu_opcode[4] -> P : -0.818045
+[setup in-out] alu_opcode[4] -> Z : -0.689091
+[setup in-out] alu_opcode[4] -> Result[31] : -0.547463
+[setup in-out] alu_opcode[4] -> N : -0.399826
+[setup in-out] alu_opcode[4] -> Result[30] : -0.369728
+[setup in-out] alu_opcode[4] -> V : -0.216023
+[setup in-out] alu_opcode[4] -> C : -0.107821
+[setup in-out] alu_opcode[4] -> Result[29] : -0.088851

@@ -1,4 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHUB/32-bit ALU/RTL/arithmetic_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module arithmetic_unit
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHUB/32-bit ALU/TB/tb_arithmetic_unit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_arithmetic_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHUB/32-bit ALU/RTL/logical_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logical_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/GitHUB/32-bit ALU/TB/tb_logical_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_logical_unit

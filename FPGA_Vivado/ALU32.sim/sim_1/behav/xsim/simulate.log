@@ -1,41 +1,38 @@
 Time resolution is 1 ps
-PASS [Test 1] op=000 A=0000000a B=00000014 -> Result=0000001e Cout=0 V=0
-PASS [Test 2] op=000 A=7fffffff B=00000001 -> Result=80000000 Cout=0 V=1
-PASS [Test 3] op=000 A=ffffffff B=00000001 -> Result=00000000 Cout=1 V=0
-PASS [Test 4] op=000 A=fffffffb B=fffffffd -> Result=fffffff8 Cout=1 V=0
-PASS [Test 5] op=000 A=80000000 B=80000000 -> Result=00000000 Cout=1 V=1
-PASS [Test 6] op=000 A=aaaaaaaa B=55555555 -> Result=ffffffff Cout=0 V=0
-PASS [Test 7] op=000 A=00000000 B=00000000 -> Result=00000000 Cout=0 V=0
-PASS [Test 8] op=000 A=ffffffff B=ffffffff -> Result=fffffffe Cout=1 V=0
-PASS [Test 9] op=001 A=00000032 B=00000014 -> Result=0000001e Cout=1 V=0
-PASS [Test 10] op=001 A=80000000 B=00000001 -> Result=7fffffff Cout=1 V=1
-PASS [Test 11] op=001 A=00000005 B=0000000a -> Result=fffffffb Cout=0 V=0
-PASS [Test 12] op=001 A=7fffffff B=ffffffff -> Result=80000000 Cout=0 V=1
-PASS [Test 13] op=001 A=00000000 B=00000000 -> Result=00000000 Cout=1 V=0
-PASS [Test 14] op=001 A=ffffffff B=ffffffff -> Result=00000000 Cout=1 V=0
-PASS [Test 15] op=001 A=80000000 B=80000000 -> Result=00000000 Cout=1 V=0
-PASS [Test 16] op=010 A=00000063 B=00000000 -> Result=00000064 Cout=0 V=0
-PASS [Test 17] op=010 A=7fffffff B=00000000 -> Result=80000000 Cout=0 V=1
-PASS [Test 18] op=010 A=ffffffff B=00000000 -> Result=00000000 Cout=1 V=0
-PASS [Test 19] op=010 A=00000000 B=00000000 -> Result=00000001 Cout=0 V=0
-PASS [Test 20] op=011 A=00000064 B=00000000 -> Result=00000063 Cout=1 V=0
-PASS [Test 21] op=011 A=80000000 B=00000000 -> Result=7fffffff Cout=1 V=1
-PASS [Test 22] op=011 A=00000000 B=00000000 -> Result=ffffffff Cout=0 V=0
-PASS [Test 23] op=011 A=00000001 B=00000000 -> Result=00000000 Cout=1 V=0
-PASS [Test 24] op=100 A=deadbeef B=cafebabe -> Result=deadbeef Cout=0 V=0
-PASS [Test 25] op=100 A=00000000 B=ffffffff -> Result=00000000 Cout=0 V=0
-PASS [Test 26] op=101 A=deadbeef B=cafebabe -> Result=cafebabe Cout=0 V=0
-PASS [Test 27] op=101 A=ffffffff B=00000000 -> Result=00000000 Cout=0 V=0
-PASS [Test 28] op=000 A=ffffffff B=ffffffff -> Result=00000000 Cout=0 V=0
-PASS [Test 29] op=001 A=12345678 B=87654321 -> Result=00000000 Cout=0 V=0
-PASS [Test 30] op=010 A=12345678 B=00000000 -> Result=00000000 Cout=0 V=0
-PASS [Test 31] op=011 A=12345678 B=00000000 -> Result=00000000 Cout=0 V=0
-PASS [Test 32] op=100 A=12345678 B=87654321 -> Result=00000000 Cout=0 V=0
-PASS [Test 33] op=101 A=12345678 B=87654321 -> Result=00000000 Cout=0 V=0
-PASS [Test 34] op=110 A=00000001 B=00000002 -> Result=00000000 Cout=0 V=0
-PASS [Test 35] op=111 A=00000001 B=00000002 -> Result=00000000 Cout=0 V=0
+PASS [Test 1] op=000 A=ffffffff B=ffffffff -> Result=ffffffff
+PASS [Test 2] op=000 A=ffffffff B=00000000 -> Result=00000000
+PASS [Test 3] op=000 A=aaaaaaaa B=55555555 -> Result=00000000
+PASS [Test 4] op=000 A=12345678 B=87654321 -> Result=02244220
+PASS [Test 5] op=001 A=00000000 B=00000000 -> Result=00000000
+PASS [Test 6] op=001 A=ffffffff B=00000000 -> Result=ffffffff
+PASS [Test 7] op=001 A=aaaaaaaa B=55555555 -> Result=ffffffff
+PASS [Test 8] op=001 A=12345678 B=87654321 -> Result=97755779
+PASS [Test 9] op=010 A=00000000 B=00000000 -> Result=ffffffff
+PASS [Test 10] op=010 A=ffffffff B=00000000 -> Result=00000000
+PASS [Test 11] op=010 A=aaaaaaaa B=00000000 -> Result=55555555
+PASS [Test 12] op=010 A=12345678 B=00000000 -> Result=edcba987
+PASS [Test 13] op=011 A=ffffffff B=ffffffff -> Result=00000000
+PASS [Test 14] op=011 A=aaaaaaaa B=55555555 -> Result=ffffffff
+PASS [Test 15] op=011 A=12345678 B=87654321 -> Result=95511559
+PASS [Test 16] op=100 A=ffffffff B=ffffffff -> Result=00000000
+PASS [Test 17] op=100 A=ffffffff B=00000000 -> Result=ffffffff
+PASS [Test 18] op=100 A=aaaaaaaa B=55555555 -> Result=ffffffff
+PASS [Test 19] op=101 A=ffffffff B=ffffffff -> Result=00000000
+PASS [Test 20] op=101 A=00000000 B=00000000 -> Result=ffffffff
+PASS [Test 21] op=101 A=aaaaaaaa B=55555555 -> Result=00000000
+PASS [Test 22] op=110 A=ffffffff B=ffffffff -> Result=ffffffff
+PASS [Test 23] op=110 A=aaaaaaaa B=55555555 -> Result=00000000
+PASS [Test 24] op=110 A=12345678 B=87654321 -> Result=6aaeeaa6
+PASS [Test 25] op=000 A=ffffffff B=ffffffff -> Result=00000000
+PASS [Test 26] op=001 A=aaaaaaaa B=55555555 -> Result=00000000
+PASS [Test 27] op=011 A=12345678 B=87654321 -> Result=00000000
+PASS [Test 28] op=100 A=ffffffff B=00000000 -> Result=00000000
+PASS [Test 29] op=101 A=ffffffff B=00000000 -> Result=00000000
+PASS [Test 30] op=110 A=ffffffff B=00000000 -> Result=00000000
+PASS [Test 31] op=010 A=aaaaaaaa B=00000000 -> Result=00000000
+PASS [Test 32] op=111 A=12345678 B=87654321 -> Result=00000000
 
 ======================================
-ALL 35 TESTS PASSED
+ALL 32 TESTS PASSED
 ======================================
-$finish called at time : 350 ns : File "D:/GitHUB/32-bit ALU/TB/tb_arithmetic_unit.v" Line 167
+$finish called at time : 32 ns : File "D:/GitHUB/32-bit ALU/TB/tb_logical_unit.v" Line 161

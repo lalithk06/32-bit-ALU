@@ -1,10 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  --include "../../../../../../../Vivado/2025.2/Vivado/data/rsb/busdef" \
-"../../../../../RTL/arithmetic_unit.v" \
-"../../../../../RTL/cla32.v" \
-"../../../../../RTL/cla4.v" \
-"../../../../../RTL/cla8.v" \
-"../../../../../TB/tb_arithmetic_unit.v" \
+"../../../../../RTL/logical_unit.v" \
+"../../../../../TB/tb_logical_unit.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

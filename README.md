@@ -159,6 +159,12 @@ All simulation was run in Vivado (XSim); waveform configurations and screenshots
 
 ---
 
+## Synthesis Results (Yosys, sky130_fd_sc_hd)
+- Cells: 1,053
+- Chip area: 10,067.16 µm²
+- Sequential elements: 0% (confirms fully combinational design)
+
+---
 ## Toolchain
 
 | Stage | Tool Used | Commercial Equivalent |

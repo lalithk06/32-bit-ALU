@@ -1,0 +1,12 @@
+# Ignore OpenLane run directory
+ASIC_OpenLane/runs/
+
+# Ignore Gate Level Simulation outputs
+ASIC_OpenLane/GLS/
+
+# Ignore verification outputs (optional)
+ASIC_OpenLane/verify/
+
+# Ignore temporary files
+*.log~
+*.tmp

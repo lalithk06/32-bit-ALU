@@ -104,7 +104,9 @@ flowchart LR
 Shift amount is taken from the lower 5 bits of `B` (`B[4:0]`), allowing shifts of 0–31 bits.
 
 ## Flags
+
 <div align="center">
+  
 | Flag | Meaning | Behavior |
 |---|---|---|
 | `Z` | Zero | `1` if `Result == 0`, for any opcode |
@@ -112,6 +114,7 @@ Shift amount is taken from the lower 5 bits of `B` (`B[4:0]`), allowing shifts o
 | `C` | Carry | Adder's carry-out — **only meaningful in ARITHMETIC mode**, forced to `0` otherwise |
 | `V` | Overflow | Signed two's-complement overflow — **only meaningful in ARITHMETIC mode**, forced to `0` otherwise |
 | `P` | Parity | `1` if `Result` has an **even** number of set bits (computed via reduction-XNOR, `~^Result`) |
+  
 </div>
 
 `C` and `V` are derived from the adder's *actual* internal operands (post operand-selection, e.g. `~B` for subtraction), not the user-facing `A`/`B` directly — this is what lets a single overflow formula correctly cover ADD, SUB, INC, and DEC simultaneously without per-opcode special-casing.

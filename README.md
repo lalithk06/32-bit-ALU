@@ -18,6 +18,7 @@ A modular, fully-verified 32-bit Arithmetic Logic Unit written in Verilog, built
 - [Verification Strategy & Results](#verification-strategy--results)
 - [Toolchain](#toolchain)
 - [Known Limitations / Future Work](#known-limitations--future-work)
+- [Project Status](#project-status)
 - [Physical Design Results](#physical-design-results)
 
 ---
@@ -200,6 +201,18 @@ All simulation was run in Vivado (XSim); waveform screenshots are checked into `
 - The current implementation is a fully combinational ALU; therefore, Clock Tree Synthesis (CTS) is intentionally skipped.
 - Timing closure has been verified for the synthesized combinational design under the SKY130 standard-cell library.
 - Future work includes pipelining the ALU, exposing an external carry-in/carry-out interface, and extending the instruction set with multiplication, comparison, and rotate operations.
+
+---
+
+## Project Status
+- [x] Specification & Architecture
+- [x] RTL Coding (modular hierarchy)
+- [x] Functional Verification (54/54 tests passing)
+- [x] Logic Synthesis (Yosys + sky130)
+- [x] Physical Design (OpenLane2)
+- [x] DRC Clean
+- [x] LVS Clean
+- [x] GDSII Generated
 
 ---
 
